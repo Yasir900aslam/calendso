@@ -1,37 +1,4 @@
-<!-- PROJECT LOGO -->
-<p align="center">
-  <a href="https://github.com/calendso/calendso">
-    <img src="https://calendso.com/calendso-logo.svg" alt="Logo" width="160" height="160">
-  </a>
-
-  <h3 align="center">Calendso</h3>
-
-  <p align="center">
-    The open-source Calendly alternative.
-    <br />
-    <a href="https://calendso.com"><strong>Learn more »</strong></a>
-    <br />
-    <br />
-    <a href="https://join.slack.com/t/calendso/shared_invite/zt-mem978vn-RgOEELhA5bcnoGONxDCiHw">Slack</a>
-    ·
-    <a href="https://calendso.com">Website</a>
-    ·
-    <a href="https://github.com/calendso/calendso/issues">Issues</a>
-  </p>
-</p>
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<img width="937" alt="calendso-screenshot" src="https://user-images.githubusercontent.com/8019099/117973912-d9405a80-b324-11eb-8b35-4262e472909c.png">
-
-Let's face it: Calendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes and even calls with our families. However, most tools are very limited in terms of control and customisations. That's where Calendso comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data. Calendso is to Calendly what GitLab is to GitHub.
-
-### Product of the Month: April
-#### Support us on [Product Hunt](https://www.producthunt.com/posts/calendso?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-calendso)
-
-
-<a href="https://www.producthunt.com/posts/calendso?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-calendso" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=291910&theme=light&period=monthly" alt="Calendso - The open source Calendly alternative | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+## Modified version of calendso
 
 ### Built With
 
@@ -39,14 +6,6 @@ Let's face it: Calendly and other scheduling tools are awesome. It made our live
 * [React](https://reactjs.org/)
 * [Tailwind](https://tailwindcss.com/)
 * [Prisma](https://prisma.io/)
-
-## Stay Up-to-Date
-
-Calendso is currently in alpha. Watch **releases** of this repository to be notified for future updates:
-
-![calendso-star-github](https://user-images.githubusercontent.com/8019099/116010176-5d9c9900-a615-11eb-92d0-aa0e892f7056.gif)
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -121,24 +80,6 @@ You will also need Google API credentials. You can get this from the [Google API
 9.  Fill out the fields (remembering to encrypt your password with [BCrypt](https://bcrypt-generator.com/)) and click `Save 1 Record` to create your first user.
 10. Open a browser to [http://localhost:3000](http://localhost:3000) and login with your just created, first user.
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/calendso/calendso/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the branch (`git push origin feature/AmazingFeature`)
-6. Open a pull request
-
 
 ## Obtaining the Google API Credentials
 
@@ -161,24 +102,4 @@ Contributions are what make the open source community such an amazing place to b
 4. Set the **Web** redirect URI to `<CALENDSO URL>/api/integrations/office365calendar/callback` replacing CALENDSO URL with the URI at which your application runs.
 5. Use **Application (client) ID** as the **MS_GRAPH_CLIENT_ID** attribute value in .env
 6. Click **Certificates & secrets** create a new client secret and use the value as the **MS_GRAPH_CLIENT_SECRET** attriubte
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-Special thanks to these amazing projects which help power Calendso:
-
-[<img src="https://calendso.com/powered-by-vercel.svg">](https://vercel.com/?utm_source=calend-so&utm_campaign=oss)
-
-* [Vercel](https://vercel.com/?utm_source=calend-so&utm_campaign=oss)
-* [Next.js](https://nextjs.org/)
-* [Day.js](https://day.js.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Prisma](https://prisma.io/)
-
-[product-screenshot]: https://i.imgur.com/4yvFj2E.png
 
