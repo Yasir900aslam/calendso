@@ -1,5 +1,27 @@
 ## Modified version of calendso
 
+## Requirements
+This is the working calendso site with DB already setup:
+https://www.dropbox.com/s/mjch6vc5f5qvjvr/calendso.zip?dl=0
+
+I want to skip auth fully and just pass a phone number (as user id) in a URL to login or create user and go straight to the /integration page
+
+example:
+https://mystite.com/autologin/9122321121
+will create a user with id 9122321121 if id does not exist
+and take that user to
+https://mystite.com/integrations page
+
+I want to autologin using a phone number string - so it should accept without "at" symbol.
+You can login to site with username "vg@vg.com" and password "test", you need to modify it to accept user name strings like "+19122321121"
+
+Also part of requirement is a node app that gets availability and sets bookings:
+https://api.docs.calendso.com/docs/calendso/calendso.yaml/paths/~1api~1availability~1:user/get
+
+https://api.docs.calendso.com/docs/calendso/calendso.yaml/paths/~1api~1book~1:user/post
+
+Thanks!
+
 ### Built With
 
 * [Next.js](https://nextjs.org/)

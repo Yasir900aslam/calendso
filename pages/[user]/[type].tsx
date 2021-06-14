@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import prisma from '../../lib/prisma';
 import { useRouter } from 'next/router';
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs , { Dayjs } from 'dayjs';
 import { Switch } from '@headlessui/react';
 import TimezoneSelect from 'react-timezone-select';
 import { ClockIcon, GlobeIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
