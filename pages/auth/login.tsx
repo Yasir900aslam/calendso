@@ -20,19 +20,10 @@ export default function Login({ csrfToken }) {
                     <input name='csrfToken' type='hidden' defaultValue={csrfToken} hidden/>
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                            Email address
+                            Phone Number
                         </label>
                         <div className="mt-1">
-                            <input id="email" name="email" type="email" autoComplete="email" placeholder="john.doe@example.com" required className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                            Password
-                        </label>
-                        <div className="mt-1">
-                            <input id="password" name="password" type="password" autoComplete="current-password" placeholder="•••••••••••••" required className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+                            <input id="number" name="phnumber" type="number" autoComplete="number" placeholder="XX-XXXXXXX" required className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
                         </div>
                     </div>
 
