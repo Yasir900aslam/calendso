@@ -1,7 +1,13 @@
 import Head from 'next/head';
+import router from 'next/router';
 import { getCsrfToken } from 'next-auth/client';
 
 export default function Login({ csrfToken }) {
+ const PhoneAuthenticate = event => {
+    event.preventDefault();
+    // /api/auth/callback/credentials
+    router.push('/integration')    
+ }
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <Head>
@@ -16,7 +22,7 @@ export default function Login({ csrfToken }) {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div className="bg-white py-8 px-4 shadow rounded-lg sm:px-10">
-                <form className="space-y-6" method="post" action="/api/auth/callback/credentials">
+                <form className="space-y-6" method="post" onSubmit={PhoneAuthenticate}>
                     <input name='csrfToken' type='hidden' defaultValue={csrfToken} hidden/>
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">

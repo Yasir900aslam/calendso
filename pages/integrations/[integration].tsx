@@ -21,7 +21,6 @@ export default function integration(props) {
 
     async function deleteIntegrationHandler(event) {
         event.preventDefault();
-
         const response = await fetch('/api/integrations', {
             method: 'DELETE',
             body: JSON.stringify({id: props.integration.id}),
