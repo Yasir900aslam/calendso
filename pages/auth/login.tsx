@@ -1,12 +1,13 @@
 import Head from 'next/head';
-import router from 'next/router';
+import { useRouter } from 'next/router'
 import { getCsrfToken } from 'next-auth/client';
 
 export default function Login({ csrfToken }) {
+ const router = useRouter()
  const PhoneAuthenticate = event => {
     event.preventDefault();
     // /api/auth/callback/credentials
-    router.push('/integration')    
+    router.push('/integrations')    
  }
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">

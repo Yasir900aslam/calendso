@@ -273,7 +273,7 @@ export async function getServerSideProps(context) {
     if (session) {
         user = await prisma.user.findFirst({
             where: {
-                email: session.user.email,
+                email: session.user.phnumber,
             },
             select: {
                 id: true,
